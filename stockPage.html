@@ -2,19 +2,33 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Stock Portfolio</title>
-  <meta name="description" content="StartScreen">
-  <meta name="author" content="Steven Jacobs">
+    <title>Stock Portfolio</title>
+    <meta name="description" content="StartScreen">
+    <meta name="author" content="Steven Jacobs">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <!--<img src="" alt="Stock Image">
-  -->
+<!--<img src="" alt="Stock Image">
+-->
+
+    <p id="addStock" onclick="addStock()">Add Stock</p>
+
+    <script>
+        var name = "";
+        var shares = 0;
+        
+        function addStock() {
+        name = prompt("Stock Name:","GME")
+        shares = prompt("Number of shares:", "0");
+        }
+    </script>
+
+    <p id="blank"></p>
 
 </body>
 </html>
