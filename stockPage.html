@@ -15,8 +15,26 @@
 <body>
 <!--<img src="" alt="Stock Image">
 -->
+    <form>
+        <label for="symbol">Stock Symbol:</label><br>
+        <input type="text" id="symbol" name="symbol"><br>
+        <label for="qty">Quantity:</label><br>
+        <input type="text" id="qty" name="qty"><br>
+    </form>
 
-    <p id="addStock" onclick="addStock()">Add Stock</p>
+    <p id="test" onclick="test()">Test</p>
+    <script>
+        function test() {
+            var symbol = document.getElementsByName("symbol")[0].value;
+            var qty = document.getElementsByName("qty")[0].value;
+            document.write("Symbol: ", symbol);
+            document.write("<br>Quantiy: ", qty);
+
+        }
+    </script> 
+
+
+    <!-- <p id="addStock" onclick="addStock()">Add Stock</p>
 
     <script>
         var name = "";
@@ -26,7 +44,7 @@
         name = prompt("Stock Name:","GME")
         shares = prompt("Number of shares:", "0");
         }
-    </script>
+    </script> -->
 
     <p id="blank"></p>
 
